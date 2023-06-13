@@ -2,47 +2,128 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    
-<title></title>
-	<style>
-    	body {
-        	margin-top: 5px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whac-a-Croc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-		img {
-			width: 80px;
-			border-radius: 10px;
-			float: left;
-			margin-right: 5px;
-		}
 
-		p.username {
-			font-weight: 900;
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url("/images/croc.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-bottom: 60px; /* Adjust the padding-bottom value to give space for the footer */
+            position: relative;
+        }
+
+        .content {
+            padding: 20px;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+            min-height: 100%;
             margin-top: 0px;
-		}
-        
-        p.speech {
-        	margin-top: -15px;
-            
+            margin-bottom: 0px;
         }
-        
-        a.mtitle {
-      		margin-top: -50px;
-        }
-	</style>
 
+        .titlebar {
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            padding-left: 30px;
+            font-family: 'Trebuchet MS';
+            font-size: x-large;
+            text-align: left;
+            font-weight: 900;
+            background-color: #348E6E;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .base {
+            font-family: 'Trebuchet MS';
+            font-size: medium;
+            text-align: left;
+            font-weight: normal;
+            margin-left: -10px;
+        }
+
+        .footer-wrapper {
+            width: 100%;
+            background-color: #348E6E;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .footer {
+            color: white;
+            text-align: left;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 6px;
+            border: 3px solid transparent;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
 </head>
 
 <body>
-	<img src="images/frog2.png" alt="Drinking Fountain Reviews">
-		<p 		class="username">cisco</p>
-        
-    <p class="speech">"Do you like bubblers son???"</p>
-    
-    <a class="mtitle" href="https://www.youtube.com/channel/UCLU2dPI7-WCypuaJHabd2Xg" target="_blank">subscribe</a>
-    
- 
+    <div class="titlebar">
+        <p class="title">Whac-a-Croc Highscores</p>
+    </div>
+    <div class="background-image"></div>
+    <div class="content-wrapper">
+        <div class="content">
+            <p class="base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet libero odio esse cupiditate ipsam impedit, voluptates aut numquam quisquam pariatur at et vero laudantium doloribus vitae in? Modi itaque facilis commodi et deserunt inventore rem, eaque laboriosam beatae vitae maiores porro illum cupiditate esse tenetur nihil. Vitae adipisci aliquid exercitationem minus molestiae assumenda, saepe nihil aperiam cum provident animi rerum dignissimos excepturi quae necessitatibus fugit similique impedit ut soluta dolorum tenetur dolores. Hic eaque nihil atque voluptas est neque quos vero cupiditate voluptatum deleniti odio esse voluptatibus nesciunt, earum omnis. Dolores odio quaerat corporis animi harum sunt culpa non laudantium repellendus enim architecto tempore praesentium similique ducimus aliquam, molestiae inventore odit. Velit ducimus consequuntur, deserunt quibusdam eos laboriosam deleniti animi dignissimos, neque quaerat reprehenderit rerum, explicabo itaque harum magnam repellendus voluptatem omnis? Unde, quam sequi veritatis corporis id sed quos ipsum qui eius. Odit ea expedita maxime laborum corrupti deserunt asperiores quia sequi quaerat ut incidunt accusamus, molestiae officia maiores omnis facere dolores aspernatur doloribus quasi nemo nesciunt inventore necessitatibus, hic voluptates. Modi molestiae dolores, quidem molestias quos non quas? Eius eos reprehenderit quasi ea debitis expedita nihil quisquam beatae nam voluptate minima corrupti ipsum non voluptatum laborum tempore, quia sed porro eaque dolor perferendis nostrum alias ullam! Similique accusamus aspernatur ullam, sed omnis laborum voluptates maxime odio sit repudiandae officiis, impedit at in asperiores eveniet numquam ea! Reprehenderit repellat corporis porro incidunt sit doloremque esse odio rerum! Eum et molestiae similique impedit quae eveniet sint, unde accusantium tenetur deleniti minus voluptate dolore, voluptas eos officia veniam maiores quasi non illo facilis necessitatibus mollitia natus! Neque suscipit nesciunt voluptatum cumque velit corporis, nihil veniam deserunt eum possimus eligendi laboriosam porro expedita quasi cum error architecto? Molestiae, nesciunt odio error voluptates, aliquid nobis aspernatur obcaecati nihil eveniet officia iure totam consectetur provident, itaque pariatur reprehenderit sequi recusandae nisi nam. At labore ab et fuga molestiae repellat ex iusto possimus consequuntur tenetur nobis, iure ea expedita doloremque. Iusto aliquid aperiam reiciendis ad nemo veniam nostrum, placeat hic quia quam quos officiis similique corrupti beatae quas, voluptatibus repellat. Amet deleniti optio mollitia explicabo atque, expedita distinctio voluptatem voluptas voluptates necessitatibus. Sapiente dolores ut aperiam non. Incidunt explicabo at tempore eos aliquid similique? In accusantium animi rem, nostrum beatae, suscipit dolorem id exercitationem voluptatum quam itaque porro dolorum possimus ipsa qui alias enim minima nobis! Maiores nostrum natus ut nobis quod. Distinctio eaque libero voluptas quis ducimus debitis qui ullam itaque totam perspiciatis doloribus facilis, eligendi enim id est voluptatem omnis dolor eius fugit nobis dignissimos. Pariatur aspernatur soluta aliquam magni maxime itaque amet beatae? Omnis officia, libero sapiente similique dolores consectetur corporis laborum fugit? Quibusdam optio, corporis molestiae ad porro atque nostrum consectetur ratione in ducimus dolore, sed explicabo quis necessitatibus. Consequuntur ad maxime quaerat iure nemo? Aliquam dicta, nobis omnis, praesentium minus quo nisi atque cum alias molestiae culpa hic delectus libero facere accusamus voluptatum? Ut soluta tempore culpa! Natus deserunt magnam nisi ipsa, obcaecati labore esse ipsam modi officia doloribus placeat unde vero dolore inventore sed eaque distinctio facere dicta, minima corporis illum dignissimos saepe. Magni soluta mollitia porro. Maiores illo dolor necessitatibus quo nostrum ad nobis officia qui? Blanditiis doloremque fuga, libero reiciendis suscipit ab hic necessitatibus? Quo, praesentium quis nisi veniam esse pariatur hic, architecto possimus sint quasi sapiente soluta! Ipsam voluptatibus cum dignissimos inventore fugiat aliquid aliquam rem sunt voluptate ab sint, consectetur corrupti quibusdam numquam accusantium repudiandae natus ex molestias non deleniti laborum quisquam? Aliquid, laborum ut? Labore iusto tempore veniam commodi aut dolorem suscipit, iste libero recusandae et molestias dicta odit impedit repellendus reprehenderit nulla pariatur magnam accusamus eveniet quisquam a vero quia cupiditate ad! Quidem distinctio quisquam eveniet voluptatibus vel, et accusantium optio alias facere. Sint ullam repellat, magni officia hic incidunt officiis ipsa placeat eveniet iste animi ut veniam voluptate quasi beatae laboriosam. Quo et inventore porro voluptate distinctio, molestiae omnis nesciunt consequuntur rerum consectetur ad id dolore amet blanditiis aliquid illum necessitatibus magnam eaque dicta molestias eum iste eius aliquam! Libero suscipit atque sunt possimus dolor vel quaerat sapiente quibusdam, qui, dolores similique a corporis aspernatur. Esse, dolorem? Veniam consequuntur, exercitationem cum possimus magnam perspiciatis atque nobis aliquam ab, iste laborum veritatis unde expedita ut consequatur error omnis deserunt voluptates ipsam ex, iusto doloribus blanditiis! Sapiente a, incidunt perferendis fuga officiis accusantium dicta consequuntur. Architecto, nemo nostrum beatae voluptate eum sequi ullam provident, minus nobis quae quasi quia reiciendis accusamus, totam odit ducimus. Officia vitae assumenda cum. Iste asperiores suscipit nulla ad molestias quae similique debitis autem voluptas ipsam inventore delectus aliquid soluta molestiae quisquam magni, quasi vero consequatur nemo commodi iusto laboriosam. Fugiat, a atque vitae labore ipsa illum minus officia dolores in amet ratione reprehenderit, cumque voluptatibus quisquam cupiditate, saepe itaque! Autem, eligendi in at quas molestias iusto obcaecati, numquam, voluptate ducimus voluptatum vitae! Qui amet omnis, facere expedita tempore error? Iusto maiores quos nam reiciendis atque nobis ex ut quaerat, excepturi in, totam culpa? Eveniet aspernatur, libero sint aperiam necessitatibus blanditiis molestias dolor hic sapiente, possimus minus voluptatem voluptatibus totam ab accusantium iure voluptatum sequi architecto distinctio magnam quae iusto. Ipsum omnis, animi vitae veniam officia expedita distinctio aperiam consequuntur rerum exercitationem ratione ab quas. Repellendus perferendis molestiae quia ullam eum accusantium commodi deleniti magni dolorum unde obcaecati minima molestias, nobis nisi incidunt sunt corrupti! Ullam facere voluptate vitae eos, accusantium perferendis culpa quibusdam voluptas eveniet porro ratione ex repudiandae?</p>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <footer class="footer">
+            <p><a href="index.html">Home</a></p>
+        </footer>
+    </div>
 </body>
 
 </html>
